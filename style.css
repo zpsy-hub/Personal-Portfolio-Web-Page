@@ -67,12 +67,27 @@ body {
 
 /* Rounded profile picture in proportion to the text */
 .hero-section img {
-    width: 150px; /* Set width and height for rounded square */
-    height: 150px;
-    border-radius: 20px; /* Rounded square shape */
+    width: 225px; /* 1.5 times the original size */
+    height: 225px; /* 1.5 times the original size */
+    border-radius: 20px; /* Keep the same proportion for rounded corners */
     object-fit: cover;
     margin-bottom: 20px;
 }
+
+
+
+/* Social Icons Styling */
+.social-icon {
+    font-size: 1.5rem;
+    color: #603ACD; /* Apply the purple color */
+    text-decoration: none; /* Remove the underline */
+    margin-right: 15px; /* Add spacing between icons */
+}
+
+.social-icon:hover {
+    color: #4a28a3; /* Darker shade of purple on hover */
+}
+
 
 /* Feature section heading styling */
 .features-section h2 {
