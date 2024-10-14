@@ -233,3 +233,67 @@ body {
 .scrollable::-webkit-scrollbar-track {
     background: #f0f4ff;
 }
+
+/* Sliding Panel */
+.info-panel {
+    position: fixed;
+    right: -50vw; /* Off-screen initially */
+    top: 80px; /* Adjust based on navbar height */
+    width: 50vw; /* Adjust width to half the screen */
+    height: calc(100% - 80px); /* Height minus navbar height */
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease; /* Smooth slide-in animation */
+    z-index: 1000; /* Ensure it's on top of content but below navbar */
+}
+
+.info-panel.open {
+    right: 0; /* Slide into view */
+}
+
+.info-content {
+    padding: 20px;
+}
+
+.info-image {
+    width: 50%; /* Make the image half of its current width */
+    height: auto; /* Keep the aspect ratio */
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+}
+
+#infoDescription {
+    margin-bottom: 20px; /* Add space between the description and lorem ipsum */
+}
+
+#infoTitle {
+    font-size: 2rem; /* Adjust size if needed */
+    font-weight: bold; /* Make it bold */
+    color: #603ACD; /* Use the purple color like other headings */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.info-image {
+    width: 50%; /* Make the image half of its current width */
+    height: auto; /* Keep the aspect ratio */
+    margin-bottom: 20px;
+    display: block; /* Ensure it's centered */
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+    border-radius: 15px; /* Add rounded corners */
+}
+
+
+
+
