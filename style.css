@@ -34,6 +34,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
+html {
+    scroll-padding-top: 100px; /* Adjust this based on your navbar height */
+}
+
 
 /* Primary button styling */
 .btn-primary {
